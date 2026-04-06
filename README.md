@@ -40,7 +40,7 @@ Ce projet a pour but de pratiquer :
 - La communication entre activités (Intent)
 - La conception d'interfaces modernes en XML
 
- # Démo
+ ## Démo
 - 📂 Consulter le code source dans ce repository
 - 🎥 Voir la démonstration vidéo incluse
 - 📱 Telecharger l'APK et tester dans votre telephone.
