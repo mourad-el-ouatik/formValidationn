@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ═══════════════════ Activite Principale avec un designe avance ═══════════════════ -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0EB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- ═══════════════════ HEADER  ═══════════════════ -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#1A1A2E">
+
+            <!-- Contenu header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingHorizontal="30dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:text="USER INFORMATIONS"
+                    android:textColor="#C9A84C"
+                    android:textSize="11sp"
+                    android:letterSpacing="0.3"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Saisie Vos Informations"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="Complétez vos informations personnelles"
+                    android:textColor="#9999AA"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- ══════════════ FORMULAIRE  ════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="-24dp"
+            android:elevation="8dp"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="8dp">
+
+            <!-- ─── CHAMP : Nom et Prénom ─── -->
+            <TextView
+                android:text="NOM ET PRÉNOM"
+                android:textColor="#C9A84C"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="👤"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/nom"
+                    android:hint="Ex : EL OUATIK Mourad"
+                    android:textColorHint="#999999"
+                    android:textColor="#1A1A2E"
+                    android:textSize="15sp"
+                    android:inputType="textPersonName"
+                    android:autofillHints="name"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"/>
+            </LinearLayout>
+
+            <!-- ─── CHAMP : Email ─── -->
+            <TextView
+                android:text="ADRESSE EMAIL"
+                android:textColor="#C9A84C"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="✉️"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:hint="Ex : user@gmail.com"
+                    android:textColorHint="#999999"
+                    android:textColor="#1A1A2E"
+                    android:textSize="15sp"
+                    android:inputType="textEmailAddress"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"/>
+            </LinearLayout>
+
+            <!-- ─── CHAMP : Téléphone ─── -->
+            <TextView
+                android:text="TÉLÉPHONE"
+                android:textColor="#C9A84C"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="📱"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:hint="Ex : +212 676 000 000"
+                    android:textColorHint="#999999"
+                    android:textColor="#1A1A2E"
+                    android:textSize="15sp"
+                    android:inputType="phone"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"/>
+            </LinearLayout>
+
+            <!-- ─── CHAMP : Adresse ─── -->
+            <TextView
+                android:text="ADRESSE"
+                android:textColor="#C9A84C"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="📍"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/adresse"
+                    android:hint="Ex : 256, Avenue Mohamed VI"
+                    android:textColorHint="#999999"
+                    android:textColor="#1A1A2E"
+                    android:textSize="15sp"
+                    android:inputType="textPostalAddress"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"/>
+            </LinearLayout>
+
+            <!-- ─── CHAMP : Ville ─── -->
+            <TextView
+                android:text="VILLE"
+                android:textColor="#C9A84C"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="🏙️"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/ville"
+                    android:hint="Ex : Boumalen Dadès"
+                    android:textColorHint="#999999"
+                    android:textColor="#1A1A2E"
+                    android:textSize="15sp"
+                    android:inputType="textCapWords"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ═════════ BOUTON SUBMIT ════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btnEnvoyer"
+                android:text="ENREGISTRER"
+                android:textColor="#FFF"
+                android:textSize="13sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:elevation="4dp"
+                android:stateListAnimator="@null"/>
+
+            <!-- Texte secondaire -->
+            <TextView
+                android:text="By Mourad EL OUATIK ©"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
